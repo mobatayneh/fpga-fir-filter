@@ -1,0 +1,161 @@
+{
+  "status": "VERIFIED_NOTEBOOK_EVIDENCE",
+  "review_method": "JSON and output inspection only; no submitted notebook cells or embedded JavaScript executed.",
+  "input_notebook_sha256": "70a881067945be857d8f31a666a7a02c6051d3e2ea699c8a3bd54a66620c69be",
+  "cell_count": 15,
+  "all_cell_sources_equal_pre_execution_repository_notebook": true,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "execution_counts_sequential": true,
+  "error_outputs": [],
+  "source_archive": {
+    "sha256_from_cell_5": "3263b77c5ea37b9a637d3452e162fa2ca6738d659a4426d4e6cf131e1d78451f",
+    "matches_historical_distribution_hash": true,
+    "original_dist_archive_present_for_rehash": false,
+    "extracted_file_count_from_cell_6": 34
+  },
+  "review_archive": {
+    "sha256_from_cell_14": "e4e7bd7271f6dc18e3da6589fcba7955a8e24361a4f103d04b69422c64172a0d",
+    "matches_user_supplied_zip": true,
+    "download_bytes_from_widget": 390433,
+    "actual_bytes": 390433
+  },
+  "metadata_consistency": {
+    "python_from_cell_1": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "python_matches_environment_json": true,
+    "displayed_metrics_equal_archive_metrics": true
+  },
+  "environment_from_archive": {
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "ghdl": "GHDL 4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]\n Compiled with GNAT Version: 13.3.0\n static elaboration, mcode JIT code generator\nWritten by Tristan Gingold.\n\nCopyright (C) 2003 - 2024 Tristan Gingold.\nGHDL is free software, covered by the GNU General Public License.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n",
+    "clock_period_ns": 10,
+    "coefficient_order_current_to_oldest": [
+      1,
+      2,
+      2,
+      1
+    ],
+    "input_signed": false,
+    "input_width": 8,
+    "output_width": 18,
+    "random_seed": "0x82080001 (VHDL LFSR); 8208 (Python reference tests)",
+    "timing_convention": "Elapsed rising-edge intervals from accepted input to valid output",
+    "hardware_executed": false,
+    "vivado_executed": false
+  },
+  "confirmed_outputs": {
+    "python_tests_passed": 22,
+    "checked_outputs": {
+      "streaming": 3652,
+      "baseline": 1620
+    },
+    "mismatches": 0,
+    "benchmark": [
+      {
+        "architecture": "baseline",
+        "samples": "512",
+        "first_accept_cycle": "2",
+        "last_output_cycle": "2561",
+        "elapsed_cycles": "2559",
+        "initiation_interval_cycles": "5"
+      },
+      {
+        "architecture": "streaming",
+        "samples": "512",
+        "first_accept_cycle": "2",
+        "last_output_cycle": "514",
+        "elapsed_cycles": "512",
+        "initiation_interval_cycles": "1"
+      }
+    ],
+    "generated_at_utc": "2026-10-21T04:59:47.635199+00:00"
+  },
+  "cell_evidence": [
+    {
+      "cell_index": 1,
+      "cell_id": "fir-01",
+      "execution_count": 1,
+      "evidence": "Python version printed; code performs no training or board access."
+    },
+    {
+      "cell_index": 3,
+      "cell_id": "fir-03",
+      "execution_count": 2,
+      "evidence": "ghdl --version CompletedProcess returncode0; apt/ghdl stdout not preserved in notebook."
+    },
+    {
+      "cell_index": 5,
+      "cell_id": "fir-05",
+      "execution_count": 3,
+      "evidence": "Uploaded source archive SHA256 matches the historical distribution hash recorded in the parent conversation."
+    },
+    {
+      "cell_index": 6,
+      "cell_id": "fir-06",
+      "execution_count": 4,
+      "evidence": "Source allowlist and manifest validation completed;34 files extracted to /content/fir_filter_run_20261021T045946_656298Z."
+    },
+    {
+      "cell_index": 8,
+      "cell_id": "fir-08",
+      "execution_count": 5,
+      "evidence": "Runner cell completed with check=True and PASS guard, no saved cell output; downstream metrics/archive supply result evidence."
+    },
+    {
+      "cell_index": 10,
+      "cell_id": "fir-10",
+      "execution_count": 6,
+      "evidence": "PASS metrics, benchmark, report and22-test OK output match the returned archive."
+    },
+    {
+      "cell_index": 12,
+      "cell_id": "fir-12",
+      "execution_count": 7,
+      "evidence": "MAKE_FIGURES=False; optional plotting intentionally skipped."
+    },
+    {
+      "cell_index": 14,
+      "cell_id": "fir-14",
+      "execution_count": 8,
+      "evidence": "Review ZIP manifest validation printed matching SHA256; download widget initialized for390433 bytes."
+    }
+  ],
+  "findings": [
+    {
+      "classification": "VERIFIED",
+      "finding": "All15 cell source texts unchanged;8 code cells have consecutive execution counts1..8 and no error outputs."
+    },
+    {
+      "classification": "VERIFIED",
+      "finding": "Returned notebook links the historically distributed source-bundle hash to the exact returned result ZIP by matching SHA256 digests."
+    },
+    {
+      "classification": "VERIFIED",
+      "finding": "Displayed metrics and22-test summary agree with the result archive."
+    },
+    {
+      "classification": "VERIFIED",
+      "finding": "Optional figures were disabled; no Colab-generated plots should be claimed."
+    },
+    {
+      "classification": "DOCUMENTATION_UPDATE",
+      "finding": "Introductory markdown still states hosted Colab was unexecuted because the supplied pre-run source remained unchanged; update canonical documentation after review."
+    }
+  ],
+  "limitations": [
+    "Notebook outputs and hashes are consistency evidence, not cryptographic attestation of a remote service or formal correctness proof.",
+    "Original distributed ZIP is not currently in dist, so its hash comparison uses the value recorded at original distribution. Archived source snapshots can be checked independently by the parent review.",
+    "Installation logs and simulator-run stdout are absent from notebook outputs; raw archive logs provide detailed simulator evidence.",
+    "Final widget establishes download initialization; the supplied ZIP with matching hash demonstrates the returned artifact, not browser UI state.",
+    "No Vivado synthesis, physical timing, power, FPGA board execution or optional plot generation occurred in these cells."
+  ]
+}

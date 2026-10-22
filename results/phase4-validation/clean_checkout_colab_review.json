@@ -1,0 +1,163 @@
+{
+  "status": "PASS",
+  "archive": {
+    "sha256": "e4e7bd7271f6dc18e3da6589fcba7955a8e24361a4f103d04b69422c64172a0d",
+    "bytes": 390433,
+    "verified_manifest_entries": 25
+  },
+  "experiment_generated_at_utc": "2026-10-21T04:59:47.635199+00:00",
+  "environment": {
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "ghdl": "GHDL 4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]\n Compiled with GNAT Version: 13.3.0\n static elaboration, mcode JIT code generator\nWritten by Tristan Gingold.\n\nCopyright (C) 2003 - 2024 Tristan Gingold.\nGHDL is free software, covered by the GNU General Public License.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n",
+    "clock_period_ns": 10,
+    "coefficient_order_current_to_oldest": [
+      1,
+      2,
+      2,
+      1
+    ],
+    "input_signed": false,
+    "input_width": 8,
+    "output_width": 18,
+    "random_seed": "0x82080001 (VHDL LFSR); 8208 (Python reference tests)",
+    "timing_convention": "Elapsed rising-edge intervals from accepted input to valid output",
+    "hardware_executed": false,
+    "vivado_executed": false
+  },
+  "recomputed_metrics": {
+    "status": "PASS",
+    "checked_outputs": {
+      "streaming": 3652,
+      "baseline": 1620
+    },
+    "checked_outputs_by_phase": {
+      "benchmark": 1024,
+      "directed": 294,
+      "reset_recovery": 3,
+      "random": 3951
+    },
+    "mismatches": 0,
+    "benchmark": [
+      {
+        "architecture": "baseline",
+        "samples": "512",
+        "first_accept_cycle": "2",
+        "last_output_cycle": "2561",
+        "elapsed_cycles": "2559",
+        "initiation_interval_cycles": "5"
+      },
+      {
+        "architecture": "streaming",
+        "samples": "512",
+        "first_accept_cycle": "2",
+        "last_output_cycle": "514",
+        "elapsed_cycles": "512",
+        "initiation_interval_cycles": "1"
+      }
+    ],
+    "evidence_level": "RTL behavioral simulation; no FPGA hardware timing or power measurement"
+  },
+  "waveform_review": {
+    "status": "PASS",
+    "checked_outputs": {
+      "streaming": 3652,
+      "baseline": 1620
+    },
+    "accepted_inputs": {
+      "baseline": 1628,
+      "streaming": 3656
+    },
+    "aborted_by_reset": {
+      "baseline": 8,
+      "streaming": 4
+    },
+    "ignored_baseline_busy_requests": 2033,
+    "reset_assertions_including_initial": 16,
+    "clock_period_fs": 10000000,
+    "rising_edges_observed": 9192,
+    "csv_cycle_offset_from_vcd_rising_edge": 1,
+    "last_vcd_timestamp_fs": 91915000000,
+    "arithmetic_mismatches": 0,
+    "method": "Integer convolution from raw top-level accepted inputs; all outputs, handshakes and holds checked"
+  },
+  "submitted_python_test_count": 22,
+  "executed_sources": [
+    {
+      "path": "rtl/fir_filter.vhd",
+      "sha256": "1c011c69723c7ee2540e8f4d0419b179542cdf689f276743a3a2e13984cacdc5",
+      "matches_current_workspace": true
+    },
+    {
+      "path": "rtl/fir_filter_streaming.vhd",
+      "sha256": "ec92626941d9cc926c380c289e14a38feec7993c5545809a3263ef7fa16f8b03",
+      "matches_current_workspace": true
+    },
+    {
+      "path": "scripts/extract_original.py",
+      "sha256": "58aa9772a894209fb9ecce035aa9b9900ec11e69f3735c285c7ed17f7499cf0c",
+      "matches_current_workspace": false
+    },
+    {
+      "path": "scripts/fir_reference.py",
+      "sha256": "7a115604c860f002aa8003d98e934e2546d67a0cae66097273ad1c6fc10f75b0",
+      "matches_current_workspace": false
+    },
+    {
+      "path": "scripts/package_source.py",
+      "sha256": "fae9e5e9e59604b1c88b9756448a0f4e98056be52847cae3d69e7947f469150e",
+      "matches_current_workspace": true
+    },
+    {
+      "path": "scripts/plot_results.py",
+      "sha256": "ec4247f5a33a0b3b26520766a394cf1b362538f0582310d0dee5f3a0b78552c7",
+      "matches_current_workspace": false
+    },
+    {
+      "path": "scripts/run_verification.py",
+      "sha256": "bcaa3f98bcf2db435fe578af733435ae7e5060c8a3586a6bdfd38fd4c997febd",
+      "matches_current_workspace": false
+    },
+    {
+      "path": "tb/tb_fir_filter_original.vhd",
+      "sha256": "635b8615b845d8297cc48fbf9db23f69b90ff19f0a5de3755a6fc946adb682a0",
+      "matches_current_workspace": true
+    },
+    {
+      "path": "tb/tb_fir_verification.vhd",
+      "sha256": "a60265d2814acb3e032b2c64248a2770d5bcde1bb3190014df7fdda69f74446d",
+      "matches_current_workspace": true
+    },
+    {
+      "path": "tests/test_reference.py",
+      "sha256": "2e7d557dcbc88610c08caeb36f1f3fc9d30fefe798918ee0c003e82f5cca1f4f",
+      "matches_current_workspace": false
+    },
+    {
+      "path": "tests/test_result_validation.py",
+      "sha256": "85b8e7aa30f006397ef380180e50c02c8389356ca7d59018affa598463a13c9d",
+      "matches_current_workspace": true
+    }
+  ],
+  "limitations": [
+    "Finite behavioral simulation, not a formal proof",
+    "No Vivado synthesis, physical timing, power or board validation",
+    "Checksums establish internal consistency, not independent attestation of a hosted service"
+  ],
+  "notebook": {
+    "sha256": "70a881067945be857d8f31a666a7a02c6051d3e2ea699c8a3bd54a66620c69be",
+    "executed_code_cells": 8,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "error_outputs": 0,
+    "result_archive_hash_matches": true
+  }
+}
