@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "checked_outputs": {
+    "streaming": 3652,
+    "baseline": 1620
+  },
+  "checked_outputs_by_phase": {
+    "benchmark": 1024,
+    "directed": 294,
+    "reset_recovery": 3,
+    "random": 3951
+  },
+  "mismatches": 0,
+  "benchmark": [
+    {
+      "architecture": "baseline",
+      "samples": "512",
+      "first_accept_cycle": "2",
+      "last_output_cycle": "2561",
+      "elapsed_cycles": "2559",
+      "initiation_interval_cycles": "5"
+    },
+    {
+      "architecture": "streaming",
+      "samples": "512",
+      "first_accept_cycle": "2",
+      "last_output_cycle": "514",
+      "elapsed_cycles": "512",
+      "initiation_interval_cycles": "1"
+    }
+  ],
+  "evidence_level": "RTL behavioral simulation; no FPGA hardware timing or power measurement",
+  "generated_at_utc": "2026-10-22T04:41:38.060719+00:00"
+}

@@ -1,0 +1,2 @@
+# Optional presentation plots only. Core tests use Python standard library.
+matplotlib==3.10.7

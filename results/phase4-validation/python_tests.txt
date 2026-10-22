@@ -1,0 +1,43 @@
+test_changed_payload (test_archive_review.ArchiveReviewTests.test_changed_payload) ... ok
+test_duplicate_member (test_archive_review.ArchiveReviewTests.test_duplicate_member) ... ok
+test_unlisted_member (test_archive_review.ArchiveReviewTests.test_unlisted_member) ... ok
+test_unsafe_path (test_archive_review.ArchiveReviewTests.test_unsafe_path) ... ok
+test_valid_manifest (test_archive_review.ArchiveReviewTests.test_valid_manifest) ... ok
+test_empty_and_invalid (test_reference.ReferenceTests.test_empty_and_invalid) ... ok
+test_full_scale_step (test_reference.ReferenceTests.test_full_scale_step) ... ok
+test_impulse (test_reference.ReferenceTests.test_impulse) ... ok
+test_independent_convolution (test_reference.ReferenceTests.test_independent_convolution) ... ok
+test_new_run_clears_history (test_reference.ReferenceTests.test_new_run_clears_history) ... ok
+test_report_sequence (test_reference.ReferenceTests.test_report_sequence) ... ok
+test_arithmetic_mismatch_rejected (test_result_validation.ResultValidationTests.test_arithmetic_mismatch_rejected) ... ok
+test_benchmark_index_corruption_rejected (test_result_validation.ResultValidationTests.test_benchmark_index_corruption_rejected) ... ok
+test_consistent_fixture (test_result_validation.ResultValidationTests.test_consistent_fixture) ... ok
+test_disagreement_between_architectures_rejected (test_result_validation.ResultValidationTests.test_disagreement_between_architectures_rejected) ... ok
+test_duplicate_benchmark_summary_rejected (test_result_validation.ResultValidationTests.test_duplicate_benchmark_summary_rejected) ... ok
+test_empty_output_trace_rejected (test_result_validation.ResultValidationTests.test_empty_output_trace_rejected) ... ok
+test_false_summary_rejected (test_result_validation.ResultValidationTests.test_false_summary_rejected) ... ok
+test_incorrect_interval_rejected (test_result_validation.ResultValidationTests.test_incorrect_interval_rejected) ... ok
+test_incorrect_latency_rejected (test_result_validation.ResultValidationTests.test_incorrect_latency_rejected) ... ok
+test_insufficient_coverage_rejected (test_result_validation.ResultValidationTests.test_insufficient_coverage_rejected) ... ok
+test_matching_but_wrong_architectures_rejected (test_result_validation.ResultValidationTests.test_matching_but_wrong_architectures_rejected) ... ok
+test_missing_architecture_rejected (test_result_validation.ResultValidationTests.test_missing_architecture_rejected) ... ok
+test_missing_phase_rejected (test_result_validation.ResultValidationTests.test_missing_phase_rejected) ... ok
+test_output_overflow_rejected (test_result_validation.ResultValidationTests.test_output_overflow_rejected) ... ok
+test_repeated_output_cycle_rejected (test_result_validation.ResultValidationTests.test_repeated_output_cycle_rejected) ... ok
+test_truncated_benchmark_rejected (test_result_validation.ResultValidationTests.test_truncated_benchmark_rejected) ... ok
+test_async_reset_aborts_pending_result (test_waveform.WaveformTests.test_async_reset_aborts_pending_result) ... ok
+test_csv_cycle_inconsistency_rejected (test_waveform.WaveformTests.test_csv_cycle_inconsistency_rejected) ... ok
+test_csv_expected_and_actual_corruption_rejected (test_waveform.WaveformTests.test_csv_expected_and_actual_corruption_rejected) ... ok
+test_hand_worked_outputs_and_busy_rejection (test_waveform.WaveformTests.test_hand_worked_outputs_and_busy_rejection) ... ok
+test_off_edge_output_change_rejected (test_waveform.WaveformTests.test_off_edge_output_change_rejected) ... ok
+test_pending_at_end_rejected (test_waveform.WaveformTests.test_pending_at_end_rejected) ... ok
+test_reset_output_failure_rejected (test_waveform.WaveformTests.test_reset_output_failure_rejected) ... ok
+test_truncated_waveform_rejected (test_waveform.WaveformTests.test_truncated_waveform_rejected) ... ok
+test_unknown_output_rejected (test_waveform.WaveformTests.test_unknown_output_rejected) ... ok
+test_wrong_busy_rejected (test_waveform.WaveformTests.test_wrong_busy_rejected) ... ok
+test_wrong_output_rejected (test_waveform.WaveformTests.test_wrong_output_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.865s
+
+OK

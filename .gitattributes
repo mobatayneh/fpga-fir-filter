@@ -1,0 +1,10 @@
+# Use LF for maintained text while preserving the exact recovered RTL and evidence.
+* text=auto eol=lf
+rtl/*.vhd -text
+tb/*.vhd -text
+results/colab-2026-10-21/** -text -whitespace
+# Historical listings retain report whitespace as well as exact line endings.
+rtl/fir_filter.vhd -whitespace
+tb/tb_fir_filter_original.vhd -whitespace
+*.png -text
+*.zip -text

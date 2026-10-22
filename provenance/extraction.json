@@ -1,0 +1,8 @@
+{
+  "source_sha256": "b22c3c0f8725dcd7c2a32531186230069253db8b26fb316a9819df569fdbb007",
+  "transformation": "Removed printed line numbers only; no RTL edits",
+  "outputs": {
+    "fir_filter.vhd": "1c011c69723c7ee2540e8f4d0419b179542cdf689f276743a3a2e13984cacdc5",
+    "tb_fir_filter_original.vhd": "635b8615b845d8297cc48fbf9db23f69b90ff19f0a5de3755a6fc946adb682a0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "ghdl": "GHDL 6.0.0 (6.0.0.r0.ge589c698c.dirty) [Dunoon edition]\n Compiled with GNAT Version: 15.2.0\n static elaboration, mcode JIT code generator\nWritten by Tristan Gingold.\n\nCopyright (C) 2003 - 2026 Tristan Gingold.\nGHDL is free software, covered by the GNU General Public License.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n",
+  "clock_period_ns": 10,
+  "coefficient_order_current_to_oldest": [
+    1,
+    2,
+    2,
+    1
+  ],
+  "input_signed": false,
+  "input_width": 8,
+  "output_width": 18,
+  "random_seed": "0x82080001 (VHDL LFSR); 8208 (Python reference tests)",
+  "timing_convention": "Elapsed rising-edge intervals from accepted input to valid output",
+  "hardware_executed": false,
+  "vivado_executed": false
+}

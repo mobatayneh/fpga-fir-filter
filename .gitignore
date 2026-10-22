@@ -1,0 +1,16 @@
+.tools/
+work/
+build/
+dist/
+results/runs/
+results/verified-2026-10-20/
+results/verified-run/
+__pycache__/
+*.pyc
+*.cf
+*.vcd
+*.ghw
+*.jou
+*.log
+.Xil/
+vivado*.str

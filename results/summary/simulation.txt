@@ -1,0 +1,2 @@
+tb_fir_verification.vhd:260:9:@91916ns:(report note): PASSED: baseline_outputs=1620 streaming_outputs=3652 cycles=9191 random_cycles=6000 seed=0x82080001
+simulation stopped @91916ns
