@@ -176,8 +176,8 @@ The Windows GHDL build encountered a library-metadata parsing problem when its b
 - No new Vivado synthesis, placement, routing, physical timing closure, power estimate, or board demonstration was executed. The optional synthesis script remains to be run in its intended tool.
 - The original 28-LUT/102-FF claim remains attributable to the report, not to this GHDL experiment. The theoretical 2050-cycle and 4.4 W values remain separate analytical results.
 - The streaming core retains fixed unsigned coefficients and has no output backpressure. It is a specialized FIR implementation, not a general signed or configurable filter.
-- The original Windows execution and the subsequently submitted Colab execution are verified; see the Phase 4 review below. GitHub Actions still requires its own hosted run.
-- Public publication, the original authors' individual contribution allocation, and any final CV wording remain separate steps.
+- Windows, submitted Colab and GitHub Actions execution are verified; see the Phase 4 and hosted review records. These are simulation environments, not physical FPGA tests.
+- The original authors' individual contribution allocation and any new project CV wording remain separate from the simulation evidence.
 
 
 ## Phase 4 verified Colab results on 2026-10-21

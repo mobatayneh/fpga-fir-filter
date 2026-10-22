@@ -1,5 +1,7 @@
 # Verified FIR filter architectures in VHDL
 
+[![Verify FIR RTL](https://github.com/mobatayneh/fpga-fir-filter/actions/workflows/verify.yml/badge.svg)](https://github.com/mobatayneh/fpga-fir-filter/actions/workflows/verify.yml)
+
 An 8-bit, four-tap FIR filter with a preserved coursework implementation and a
 separate streaming implementation. Both compute the same exact unsigned result:
 
@@ -12,7 +14,7 @@ interface design, automated verification and reproducible performance comparison
 It runs on a computer using GHDL; no FPGA board, GPU, dataset or ML training is needed.
 
 **Current status:** reproduced on Windows with GHDL 6.0.0 and Google Colab Linux
-with GHDL 4.1.0. The returned Colab archive, executed notebook and raw waveforms
+with GHDL 4.1.0, and on GitHub Actions Ubuntu with GHDL 4.1.0. The returned Colab archive, executed notebook and raw waveforms
 were independently reviewed. Vivado synthesis, physical timing, power and board
 execution remain unverified.
 
@@ -27,6 +29,11 @@ inputs in the VCD waveform, independently of the testbench's expected-value colu
 After adding that review tooling, the local suite passed **38 Python tests**
 and repeated the same 5272-output VHDL simulation. The 22-test count above is
 the historical suite actually executed in the submitted Colab session.
+
+The [first hosted CI run](https://github.com/mobatayneh/fpga-fir-filter/actions/runs/39723764246)
+also passed all 38 Python tests and the full 5272-output simulation. Its exported
+archive passed a separate integrity and raw-waveform review; see the
+[hosted validation record](results/github-actions-2026-10-22/README.md).
 
 | RTL architecture | Input interval | Latency | 512-sample block |
 |---|---:|---:|---:|

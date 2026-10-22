@@ -1,6 +1,7 @@
 # Publication review
 
 Repository: [mobatayneh/fpga-fir-filter](https://github.com/mobatayneh/fpga-fir-filter).
+Pull request: [#1](https://github.com/mobatayneh/fpga-fir-filter/pull/1).
 
 ## Scope
 
@@ -29,7 +30,11 @@ Validation:
   archive checksum matches the preserved returned ZIP.
 
 Limits: no new Vivado utilization, placement/routing, physical clock closure,
-power or board results. Hosted CI is pending its first branch run. The streaming core
+power or board results. [Hosted CI](https://github.com/mobatayneh/fpga-fir-filter/actions/runs/39723764246)
+passed on Ubuntu with GHDL 4.1.0: 38 tests and 5272 outputs. Its exported archive
+also passed a separate review of all 29 manifest entries and every waveform
+output; see the [hosted evidence](../results/github-actions-2026-10-22/README.md).
+The streaming core
 uses fixed unsigned coefficients and has no output backpressure. The claimed
 fivefold improvement is steady-state sample throughput at a common clock.
 
